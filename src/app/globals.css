@@ -1,0 +1,51 @@
+.cardTitle {
+  height: 100px !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-top: 50px !important;
+  text-align: center !important;
+}
+.reference {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+}
+
+.translation {
+  font-size: 25px !important;
+  font-weight: 400 !important;
+  padding: 20px 0px !important;
+}
+
+.arabic {
+  color: green !important;
+  font-size: 25px !important;
+  padding: 30px 0px !important;
+  font-weight: bolder !important;
+}
+
+.box {
+  width: 100% !important;
+  padding: 20px !important;
+  text-align: center !important;
+  border-radius: 15px !important;
+  margin: 4.374rem 0.8rem !important;
+}
+
+.drawerHeadings {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  padding: 10px !important;
+  text-align: center !important;
+}
+
+.link {
+  text-decoration: none !important;
+}
+
+.note {
+  font-size: 16px !important;
+  padding: 30px 0px !important;
+  font-weight: bolder !important;
+}
