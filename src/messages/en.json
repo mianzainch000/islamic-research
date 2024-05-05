@@ -7,6 +7,7 @@
     "wealth": "Wealth: A Trial",
     "qayamat": "The Scene of Judgment Day",
     "shadow": "The Shade of Allah's Throne",
+    "qabar": "Asking questions in the grave and description of the punishment of the grave",
     "wealthtitle1": "Wealth is a trial",
     "wealthtitle2": "Giving precedence to the Hereafter over the World",
     "wealthtitle3": "Interest is a curse",
@@ -65,6 +66,10 @@
     {
       "id": "70kluckyPepeple",
       "title": "Those who will enter paradise without any accountability"
+    },
+    {
+      "id": "qabar",
+      "title": "Asking questions in the grave and description of the punishment of the grave"
     }
   ],
 
@@ -102,6 +107,11 @@
     {
       "id": "70kluckyPepeple",
       "title": "Those who will enter paradise without any accountability",
+      "button": "Read more"
+    },
+    {
+      "id": "qabar",
+      "title": "Asking questions in the grave and description of the punishment of the grave",
       "button": "Read more"
     }
   ],
@@ -1568,6 +1578,24 @@
       "id": "2",
       "reference": "Sunan Tirmidhi 2437, Sunan Ibn Majah 4286",
       "translation": "I heard the Messenger of Allah (peace be upon him) saying, 'My Lord promised me that He would admit seventy thousand of my followers into Paradise without an account, and without any punishment. With every thousand, there will be another seventy thousand, and besides these, three handfuls of my followers from the Handfuls of my Lord.'"
+    }
+  ],
+
+  "qabar": [
+    {
+      "id": "1",
+      "reference": "Sunan Abu Dawood 4753, Sunan al-Tirmidhi 3120, Al-Mustadrak by Al-Hakim 107.",
+      "translation": "The narration from Sahih al-Bukhari and Sahih Muslim, related by Hazrat Bara' bin 'Azib (may Allah be pleased with him), states: We were once accompanying the Messenger of Allah (peace be upon him) to attend the funeral of a Ansari companion. When we reached the grave, it had not yet been dug. So we sat around the Prophet (peace be upon him) waiting for the grave to be prepared. He (peace be upon him) looked towards the sky and then towards the earth, raising his gaze three times. Then he supplicated: 'O Allah! I seek refuge in You from the punishment of the grave.' Then he said: 'When a believing servant is about to depart this world and enter the Hereafter, angels with faces as bright as the sun descend upon him from the heavens. They bring with them shrouds from Paradise and perfumes from Paradise. They sit away from him at the limit of his eyesight. Then the angel of death approaches and sits by his head and says, 'O pure soul, come out to forgiveness and pleasure from Allah.' The soul then flows out of the body just as a drop flows out of a water skin. The angels take the soul, and they do not leave it in their hands for more than a blink of an eye until they have placed it in the shrouds and perfumed it. They take it up to the heavens, and every group of angels they pass by asks, 'Who is this pure soul?' They reply, 'So-and-so, the son of so-and-so,' using the best names by which the person was addressed on earth. When they reach the lowest heaven, they request admission, and the gates of the heavens are opened for them. The angels who are near Allah's Throne ask the angels who brought the soul, 'Was this soul ever in a righteous state?' The angels reply, 'Yes.' Then the angels ask, 'How did he come to know his Lord?' They reply, 'Through the Book of Allah, in which he had faith, affirmed, and acted upon.' Then it is said, 'Let him be clothed in the garments of Paradise, place the furnishings of Paradise upon him, and open for him a door to Paradise.' So his grave is expanded for him to the extent of seventy cubits by seventy, and it is filled with the fragrance of Paradise. Then a man with a beautiful face, beautiful garments, and a pleasant fragrance comes to him and says, 'Receive glad tidings that will bring you joy. This is the day that you were promised.' The deceased asks, 'Who are you, for your face is one which brings goodness?' He replies, 'I am your righteous deeds.' Then he is asked, 'O Lord, establish the Hour, so that I may return to my family and my property.' The Prophet (peace be upon him) recited the verse, 'Allah keeps firm those who believe, with the firm word, in worldly life and in the Hereafter.' (Quran 14:27) And when the disbelieving servant is about to depart this world and enter the Hereafter, angels with black faces descend upon him from the heavens. They bring with them sackcloth and they sit away from him at the limit of his eyesight. Then the Angel of Death comes and sits by his head and says, 'O evil soul, come out to the anger and wrath of Allah.' So the soul disperses throughout the body, and the Angel of Death extracts it forcefully, just as a skewer is pulled out from wet wool. He then takes the soul, and they do not leave it in his hand for more than a blink of an eye until they have placed it in the sackcloth. They take it up to the heavens, and every group of angels they pass by asks, 'Who is this evil soul?' They reply, 'So-and-so, the son of so-and-so,' using the worst names by which the person was addressed on earth. When they reach the lowest heaven, they request admission, but the gates of the heavens are not opened for them. The Messenger of Allah (peace be upon him) recited, And for those who disbelieved, their deeds have been made attractive to them, so they wander blindly. Then it is said, 'Put him into the clothes of Hell and open for him a door to Hell. Then there comes to him some of its heat and hot air. His grave is compressed for him until his ribs are crushed together. Then a man with an ugly face, ugly garments, and a foul stench comes to him and says, Receive the tidings of what will grieve you. This is the day that you were promised. The deceased asks, Who are you, for your face is one which forebodes evil?' He replies, I am your evil deeds. Then it is said, For him a door to Hell be opened from his grave. Then he is given some of its heat and hot air."
+    },
+    {
+      "id": "2",
+      "reference": "The question in the grave.",
+      "translation": ""
+    },
+    {
+      "id": "3",
+      "reference": " Mishkat al-Masabih 131, Sahih Bukhari 1374, Sunan Abu Dawood 4753, Sunan Tirmidhi 3120, Al-Mustadrak Hakim 107",
+      "translation": "They come to him and ask: Who is your Lord? (The Prophet ﷺ said) He will say: My Lord is Allah. Then they will ask: What is your religion? He will reply: My religion is Islam. Then they will ask: What about this man who was sent among you? He will say: He is the Messenger of Allah. They will ask: How did you come to know? He will reply: I read the Book of Allah, believed in it, and confirmed it."
     }
   ]
 }

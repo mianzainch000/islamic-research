@@ -99,6 +99,8 @@ const Navbar = () => {
       return setScreenName(t("shadow"));
     } else if (path === "/urd/70kluckyPepeple") {
       return setScreenName(t("luckyPeople"));
+    } else if (path === "/urd/qabar") {
+      return setScreenName(t("qabar"));
     } else {
       if (path === "/en") {
         return setScreenName(t("navHeading"));
@@ -170,6 +172,8 @@ const Navbar = () => {
         return setScreenName(t("shadow"));
       } else if (path === "/en/70kluckyPepeple") {
         return setScreenName(t("luckyPeople"));
+      } else if (path === "/en/qabar") {
+        return setScreenName(t("qabar"));
       }
     }
   }, [path, t]);
