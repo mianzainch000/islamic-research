@@ -21,7 +21,7 @@ const MainHeadings = () => {
       sx={{
         marginTop: "100px",
         marginBottom: "20px",
-        justifyContent: "center",
+        justifyContent: path === "/urd" ? "right" : "left",
         flexDirection: path === "/urd" ? "row-reverse" : "row",
       }}
       data-aos="fade-right"
