@@ -1,15 +1,15 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
 import Avatar from "@mui/material/Avatar";
+import pak from "@assets/images/pak.jpg";
+import usa from "@assets/images/usa.png";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import IconButton from "@mui/material/IconButton";
-import Image from "next/image";
-import pak from "@assets/images/pak.png";
-import usa from "@assets/images/usa.png";
 // import LanguageIcon from "@mui/icons-material/Language";
 import { useRouter, usePathname, useParams } from "next/navigation";
 export default function AccountMenu() {
@@ -47,7 +47,12 @@ export default function AccountMenu() {
             aria-expanded={open ? "true" : undefined}
           >
             <Avatar sx={{ width: 32, height: 32 }}>
-              <Image src={lang == "en" ? usa : pak} />
+              <Image
+                src={lang === "en" ? usa : pak}
+                alt="Language Flag"
+                width={33}
+                height={33}
+              />
             </Avatar>
           </IconButton>
         </Tooltip>
@@ -86,8 +91,8 @@ export default function AccountMenu() {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
-        <MenuItem onClick={() => handleChange("en")}>English</MenuItem>
         <MenuItem onClick={() => handleChange("urd")}>Urdu</MenuItem>
+        <MenuItem onClick={() => handleChange("en")}>English</MenuItem>
       </Menu>
     </React.Fragment>
   );
