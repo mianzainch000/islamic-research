@@ -6,9 +6,8 @@ import rootReducer from "./rootReducer";
 const persistConfig = {
   key: "root",
   storage,
-  // blacklist: ["theme"],
+  blacklist: ["theme"],
 };
-// ...
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
