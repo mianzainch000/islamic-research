@@ -15,6 +15,7 @@
     "@mui/material": "^5.15.14",
     "@reduxjs/toolkit": "^2.2.3",
     "aos": "^2.3.4",
+    "cookies-next": "^4.2.1",
     "next": "14.1.4",
     "next-intl": "^3.10.0",
     "nextjs-toploader": "^1.6.11",

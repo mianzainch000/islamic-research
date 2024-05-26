@@ -1,13 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
-
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import rootReducer from "./rootReducer";
+import { combineReducers } from "@reduxjs/toolkit";
+import themeSlice from "./slices/themeSlice";
+
 const persistConfig = {
   key: "root",
   storage,
-  blacklist: ["theme"],
+  blacklist: [], // Do not blacklist the theme, include it in persistence
 };
+
+const rootReducer = combineReducers({
+  theme: themeSlice,
+});
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
