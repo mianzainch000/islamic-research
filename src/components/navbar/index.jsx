@@ -12,7 +12,6 @@ import { useTheme, useMediaQuery } from "@mui/material";
 import { setIsDarkTheme } from "@/store/slices/themeSlice";
 import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import { AppBar, Button, Stack, Toolbar, Typography } from "@mui/material";
-import ImportContactsRoundedIcon from "@mui/icons-material/ImportContactsRounded";
 import NightlightRoundRoundedIcon from "@mui/icons-material/NightlightRoundRounded";
 
 const Navbar = () => {
@@ -183,9 +182,6 @@ const Navbar = () => {
         {isMatch ? (
           <>
             <Link href={"/"} className="link">
-              {/* <ImportContactsRoundedIcon
-                sx={{ color: "white", fontSize: "30px", textAlign: "center" }}
-              /> */}
               <Image src={logo} width={50} />
             </Link>
             <Typography

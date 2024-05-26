@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
+import { setCookie } from "cookies-next";
 import messages from "@/messages/en.json";
 import logo from "@assets/images/logo.png";
 import { useTranslations } from "next-intl";
@@ -12,7 +13,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useDispatch, useSelector } from "react-redux";
 import { setIsDarkTheme } from "@/store/slices/themeSlice";
-import ImportContactsRoundedIcon from "@mui/icons-material/ImportContactsRounded";
 import {
   Drawer,
   Box,
@@ -24,6 +24,7 @@ import {
   FormControlLabel,
   IconButton,
 } from "@mui/material";
+
 const DrawerComp = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const router = useRouter();
@@ -34,12 +35,16 @@ const DrawerComp = () => {
   const currentTheme = useSelector((state) => state.theme.isDark);
   const [lang, setLang] = useState(pathname.locale);
   const trans = useTranslations("drawerHeadings");
+
   const handleChange = (event) => {
     const selectedLang = event.target.value;
     setLang(selectedLang);
     const currentPathWithoutLocale = `/${path.substring(1 + lang.length)}`;
     const newPath = `/${selectedLang}${currentPathWithoutLocale}`;
     router.replace(newPath);
+    const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000;
+    const expires = new Date(Date.now() + oneYearInMilliseconds);
+    setCookie("selectedLanguage", selectedLang, { expires });
   };
 
   return (
@@ -61,17 +66,9 @@ const DrawerComp = () => {
         }}
       >
         <Grid container sx={{ padding: "30px 5px" }}>
-          {/* Logo */}
           <Grid md={10} xs={10}>
             <Link href={"/"} className="link">
-              <Image src={logo} width={50} />
-              {/* <ImportContactsRoundedIcon
-                sx={{
-                  color: "secondary.light",
-                  fontSize: "30px",
-                  textAlign: "center",
-                }}
-              /> */}
+              <Image src={logo} width={50} alt="Logo" />
             </Link>
           </Grid>
 
@@ -103,7 +100,7 @@ const DrawerComp = () => {
                   >
                     <Typography
                       sx={{ color: "secondary.light" }}
-                      className="drawerHeadings "
+                      className="drawerHeadings"
                       onClick={() => setDrawerOpen(false)}
                     >
                       {trans(`${heading}.title`)}
@@ -148,7 +145,7 @@ const DrawerComp = () => {
                   }}
                 />
               }
-              label="Englsih"
+              label="English"
               className="text"
               sx={{ color: "secondary.light" }}
             />

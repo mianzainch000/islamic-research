@@ -1,16 +1,15 @@
 "use client";
-
 import Image from "next/image";
-import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Menu from "@mui/material/Menu";
+import React, { useState } from "react";
+import { setCookie } from "cookies-next";
 import Avatar from "@mui/material/Avatar";
 import pak from "@assets/images/pak.jpg";
 import usa from "@assets/images/usa.png";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import IconButton from "@mui/material/IconButton";
-// import LanguageIcon from "@mui/icons-material/Language";
 import { useRouter, usePathname, useParams } from "next/navigation";
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -26,6 +25,9 @@ export default function AccountMenu() {
     const currentPathWithoutLocale = path.replace(`/${lang}`, "");
     const newPath = `/${languageCode}${currentPathWithoutLocale}`;
     router.replace(newPath);
+    const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000;
+    const expires = new Date(Date.now() + oneYearInMilliseconds);
+    setCookie("selectedLanguage", languageCode, { expires });
   };
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
