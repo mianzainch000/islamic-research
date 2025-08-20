@@ -1,0 +1,47 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1e272e;
+  --card-bg: rgba(255, 255, 255, 0.75);
+  --card-border: rgba(0, 0, 0, 0.05);
+  --title-color: #0a3d62;
+  --btn-hover-bg: #000000;
+
+  /* detailPage */
+  /* dp means Detail Page */
+
+  --bg-color-dp: #f8f8f8;
+  --card-bg-dp: #ffffff;
+  --border-color-dp: #e0dede;
+  --hover-border-color-dp: #c39a62;
+  --reference-color: #7c5e10;
+  --translation-color: #333;
+  --arabic-color: #2c3e50;
+  --note-color: #7f8c8d;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --card-bg: rgba(40, 40, 40, 0.75);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --title-color: #4fc3f7;
+  --btn-hover-bg: #ffffff; /* white */
+
+  /* detailPage */
+  /* dp means Detail Page */
+
+  --bg-color-dp: #121212;
+  --card-bg-dp: #1e1e1e;
+  --border-color-dp: #333;
+  --hover-border-color-dp: #c39a62;
+  --reference-color: #d2b55b;
+  --translation-color: #eee;
+  --arabic-color: #add8e6;
+  --note-color: #cccccc;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}

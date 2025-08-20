@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Noto Nastaliq Urdu", serif;
+  background: linear-gradient(to bottom, #f5f5f5, #eaeaea);
+}
+
+.errorCode {
+  margin: 0;
+  font-size: 8rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.message {
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.homeBtn {
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #2c3e50;
+  transition: background 0.3s ease;
+}
+
+.homeBtn:hover {
+  background-color: #1a252f;
+}
